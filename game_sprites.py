@@ -52,7 +52,7 @@ class Background(GameSprite):
         super().update()
 
         # 2. Check if the Background Sprite has moved out of the screen, if true, reset the location of Background Sprite. 
-		#    We use the same background image to move together to get the animation result
+	#    We use the same background image to move together to get the animation result
         if self.rect.y >= SCREEN_RECT.height:
             self.rect.y = -self.rect.height
 
@@ -79,7 +79,8 @@ class Enemy(GameSprite):
         # 1. Call the parent update method to move the Enemy Fighter Sprite upward 
         super().update()
 
-        # 2. Check if the Enemy Fighter Sprite has moved out of the screen, if true, remove it from the Enemy Sprite Group to release the resources
+        # 2. Check if the Enemy Fighter Sprite has moved out of the screen, if true, 
+	#    remove it from the Enemy Sprite Group to release the resources
         if self.rect.y >= SCREEN_RECT.height:
             self.kill()
 
@@ -135,7 +136,7 @@ class Bullet(GameSprite):
     def __init__(self):
 
         # Call the parent (GameSprite) constructor to set the image and speed,
-		# Set the speed to -2, meaning the bullet moves upward and different speed can be applied
+	# Set the speed to -2, meaning the bullet moves upward and different speed can be applied
         super().__init__("./images/bullet1.png", -2)
 
     def update(self):
