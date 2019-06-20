@@ -1,6 +1,12 @@
 import random
 import pygame
 
+"""
+This module include all the Sprites of the game
+The basic Sprite class is the GameSprite, inherited from pygame Sprite.
+All the other Sprites inherite from GameSprite.
+"""
+
 # Set the measurement of screen
 SCREEN_RECT = pygame.Rect(0, 0, 480, 700)
 # Set the refresh frequency 1/60 second
