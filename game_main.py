@@ -17,7 +17,7 @@ class FighterGame(object):
 
         # 4. Set the timer event for creating the Enemy Sprite　1 Enemy Sprite/1s
         pygame.time.set_timer(CREATE_ENEMY_EVENT, 1000)
-		# 5. Set the timer event for creating the Bullet Sprite 1 Bullet Sprite per 0.5s
+	# 5. Set the timer event for creating the Bullet Sprite 1 Bullet Sprite per 0.5s
         pygame.time.set_timer(HERO_FIRE_EVENT, 500)
 
     def __create_sprites(self):
