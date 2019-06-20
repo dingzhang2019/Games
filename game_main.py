@@ -94,19 +94,19 @@ class FighterGame(object):
 
     def __update_sprites(self):
 	
-		# Update the Background Sprite Group
+	# Update the Background Sprite Group
         self.back_group.update()
         self.back_group.draw(self.screen)
 
-		# Update the Enemy Fighter Sprite Group
+	# Update the Enemy Fighter Sprite Group
         self.enemy_group.update()
         self.enemy_group.draw(self.screen)
 
-		# Update the Hero Fighter Sprite Group
+	# Update the Hero Fighter Sprite Group
         self.hero_group.update()
         self.hero_group.draw(self.screen)
 
-		# Update the Bullet Sprite Group
+	# Update the Bullet Sprite Group
         self.hero.bullets.update()
         self.hero.bullets.draw(self.screen)
 
