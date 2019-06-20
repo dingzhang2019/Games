@@ -123,7 +123,7 @@ class Hero(GameSprite):
     def fire(self):
         #print("Firing...")
 		
-		# Fire 3 bullets in a row
+	# Fire 3 bullets in a row
         for i in range(3):
             # 1. Create the Bullet Sprite
             bullet = Bullet()
