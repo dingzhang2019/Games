@@ -156,4 +156,4 @@ class Bullet(GameSprite):
 
     def __del__(self):
         # print("Bullet has been removed...")
-		pass 
+	pass 
