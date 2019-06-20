@@ -4,7 +4,7 @@ import pygame
 """
 This module include all the Sprites of the game
 The basic Sprite class is the GameSprite, inherited from pygame Sprite.
-All the other Sprites inherite from GameSprite.
+All the other Sprites inherit from GameSprite.
 """
 
 # Set the measurement of screen
@@ -57,7 +57,8 @@ class Background(GameSprite):
         # 1. Call the parent update method
         super().update()
 
-        # 2. Check if the Background Sprite has moved out of the screen, if true, reset the location of Background Sprite. 
+        # 2. Check if the Background Sprite has moved out of the screen, 
+	#    if true, reset the location of Background Sprite. 
 	#    We use the same background image to move together to get the animation result
         if self.rect.y >= SCREEN_RECT.height:
             self.rect.y = -self.rect.height
