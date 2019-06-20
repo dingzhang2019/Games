@@ -85,7 +85,8 @@ class FighterGame(object):
 
         # Check the Hero Fighter Sprite collided with the Enemy Fighter Sprite
         if len(enemies) > 0:
-
+		
+	    print("Hero Fighter has been destroyed!")
             # Remove the Hero Fighter Sprite 
             self.hero.kill()
 
